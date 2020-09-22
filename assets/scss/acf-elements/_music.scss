@@ -1,0 +1,197 @@
+// hero
+#hero-music-wrapper{
+    height: 100vh;
+    width: 100vw;
+    #hero-music-wrap{
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        @include min-screen(800px){
+            margin-top: -43px;
+        }
+        #hero-music-image{
+            display: none;
+            @include min-screen(775px){
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                height: 100vh;
+                width: 100vw;
+                opacity: 0.4;
+                display:  block;
+            }
+        }
+        #hero-music-image-m{
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+            width: 100vw;
+            opacity: 0.4;
+            display: block;
+            @include min-screen(775px){
+                display: none;
+            }
+        }
+        #hero-music-text-box{
+            position: absolute;
+            color: #ffffff;
+            color: #fff;
+            font-family: sans-serif;
+            font-size: 2rem;
+            @include min-screen(1000px){
+                font-size: 4rem;
+            }
+            h1{
+                
+            }
+        }
+    }
+}
+
+// Media headline
+
+#media-headline-wrapper{
+    width: 100vw;
+    height: 100px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-top: 43px;
+    p{
+        font-size: 2rem;
+        font-family: sans-serif;
+    }
+}
+
+// music video
+#media-wrapper-d{
+    height: 350px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    @include min-screen(400px){
+        height: 500px;
+    }
+    @include min-screen(700px){
+        height: 700px;
+    }
+    @include min-screen(800px){
+        height: 500px;
+    }
+    @include min-screen(1000px){
+        height: 550px;
+    }
+    @include min-screen(1300px){
+        height: 900px;
+    }
+    #media-wrap{
+        width: 300px;
+        height: 300px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        opacity: 0.7;
+        @include min-screen(400px){
+            width: 380px;
+            height: 380px;
+        }
+        @include min-screen(700px){
+            width: 600px;
+            height: 600px;
+        }
+        @include min-screen(800px){
+            width: 800px;
+            height: 400px;
+        }
+        @include min-screen(1000px){
+            width: 1000px;
+            height: 500px;
+        }
+        @include min-screen(1400px){
+            height: 750px;
+            width: 1500px;
+        }
+        .media{
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 100%;
+            iframe{
+                object-fit: cover;
+                height: 100%;
+                width: 100%;
+            }
+        }
+        .media:hover{
+            opacity: 0.5;
+            transition: all 0.4s;
+        }
+    }
+}
+
+// Modal
+
+.modal{
+    height: 240px !important;
+    max-width: 1000px !important;
+    background-repeat: no-repeat !important;
+    background-size: contain !important;
+    background-position: center !important;
+    @include min-screen(700px){
+        height: 700px !important;
+    }
+}
+
+// stream
+
+#stream-wrapper{
+    #stream-wrap{
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        justify-content: center;
+        height: 200px;
+        align-items: center;
+        @include min-screen(800px){
+            height: 300px;
+        }
+        @include min-screen(1300px){
+            height: 400px;
+        }
+        a{
+            margin: 10px;
+            @include min-screen(800px){
+                margin: 40px;
+            }
+            #stream-logo{
+                height: 75px;
+                width: 75px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                opacity: 0.7;
+                @include min-screen(800px){
+                    height: 100px;
+                    width: 100px;
+                }
+                @include min-screen(1300px){
+                    height: 130px;
+                    width: 130px;
+                }
+            }
+        }
+        a:hover{
+            opacity: 0.5;
+            transition: all 0.4s;
+        }
+    }
+}

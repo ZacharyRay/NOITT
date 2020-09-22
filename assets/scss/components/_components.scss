@@ -1,0 +1,100 @@
+#modal-wrap{
+    display: none;
+    #modal-wrapper{
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        top: 0;
+        display: grid;
+        place-items: center;
+        z-index: 4;
+        #modal-bg{
+            height: 100%;
+            width: 100%;
+            background-color: rgba(3, 3, 3, 0.7);
+            grid-area: 1 / 1;
+            z-index: 5;
+        }
+        #modal-box {
+            background-color: #111111;
+            height: 300px;
+            width: 300px;
+            grid-area: 1 / 1;
+            z-index: 6;
+            padding: 10px;
+            color: #ffffff;
+            border-radius: 6%;
+            font-family: sans-serif;
+            font-size: 0.6rem;
+            @include min-screen(375px){
+                height: 400px;
+                width: 300px;
+                font-size: 0.7rem;
+                padding: 30px;
+            }
+            @include min-screen(800px){
+                height: 600px;
+                width: 600px;
+                margin: 30px;
+                font-size: 1rem;
+            }
+        }
+        #exit {
+            height: 300px;
+            width: 300px;
+            grid-area: 1 / 1;
+            z-index: 3;
+            color: #ffffff;
+            border-radius: 6%;
+            display: grid;
+            justify-content: flex-end;
+            align-items: flex-start;
+            z-index: 6;
+            cursor: default;
+            @include min-screen(375px){
+                height: 400px;
+            }
+            @include min-screen(800px){
+                height: 600px;
+                width: 600px;
+            }
+            p{
+                margin-block-start: 0em;
+                margin-block-end: 0em; 
+                cursor: pointer; 
+            }
+        }
+    }
+      
+}
+
+#hover-overlay-wrapper {
+    cursor: default;
+    @include min-screen(800px){
+        cursor: none;
+    }
+  }
+  #follower {
+    position: absolute;
+    display: none;
+    @include min-screen(800px){
+        display: block;
+    }
+  }
+  #follower #circle1 {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    place-items: center;
+    border: 4px solid #000000;
+    display: none;
+    @include min-screen(800px){
+        display: grid;
+    }
+    p{
+        font-family: sans-serif;
+    }
+  }
+  

@@ -1,0 +1,127 @@
+#home-bg-wrapper{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    @include min-screen(800px){
+        margin-top: -43px;
+    }
+    #hero-logo{
+        position: absolute;
+        #logo{
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            height: 300px;
+            width: 300px;
+            @include min-screen(800px){
+                height: 500px;
+                width: 500px;
+            }
+        }
+    }
+    #bg-image-wrap{
+        width: 100vw;
+        height: 100vh;
+        background-color: #000;
+        #bg-image{
+                display: none;
+                @include min-screen(775px){
+                    width: 100%;
+                    height: 100vh;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    opacity: 0.5;
+                    margin-top: 0px;
+                    display: block;
+                }
+        }
+        #bg-image-m{
+                width: 100%;
+                height: 100vh;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                opacity: 0.5;
+                margin-top: 0px;
+                display: block;
+                @include min-screen(775px){
+                    display: none;
+                }
+        }
+    }
+    #socials-wrapper{
+        position: absolute;
+        z-index: 2;
+        bottom: 15%;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        @include min-screen(800px){
+            justify-content: flex-start;
+            bottom: 7%;
+        }
+        #socials-box{
+            display: flex;
+            flex-direction: row;
+            margin-left: 0vw;
+            @include min-screen(800px){
+                margin-left: 15vw;
+            }
+            #so-me{
+                a{
+                    #so-me-icon{
+                        width: 85px;
+                        height: 85px;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        @include min-screen(800px){
+                            width: 55px;
+                            height: 55px;
+                        }
+                    }
+                }
+            }
+            #so-me:nth-child(1){
+                animation: bouncing-one 2s infinite;
+            }
+            #so-me:nth-child(2){
+                animation: bouncing-one 2s infinite;
+                animation-delay: 0.4s;
+            }
+
+            #so-me:nth-child(3){
+                animation: bouncing-one 2s infinite;
+                animation-delay: 0.9s;
+            }
+            #so-me:nth-child(4){
+                animation: bouncing-one 2s infinite;
+                animation-delay: 1.3s;
+            }
+            #so-me:nth-child(5){
+                animation: bouncing-one 2s infinite;
+                animation-delay: 1.8s;
+            }
+            #so-me:nth-child(6){
+                animation: bouncing-one 2s infinite;
+                animation-delay: 1.9s;
+            }
+        }
+    }
+}
+@keyframes bouncing-one{
+    0%   { transform: scale(1,1)      translateY(0); }
+   10%  { transform: scale(1.1,.9)   translateY(0); }
+   30%  { transform: scale(.9,1.1)   translateY(-20px); }
+   50%  { transform: scale(1.05,.95) translateY(0); }
+   57%  { transform: scale(1,1)      translateY(-3px); }
+   64%  { transform: scale(1,1)      translateY(0); }
+   100% { transform: scale(1,1)      translateY(0); }
+  }
+  

@@ -1,0 +1,97 @@
+
+// Bands in town
+
+#tour-wrapper{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    .bit-widget-container{
+        @include min-screen(900px){
+            width: 800px;
+        }
+        div{
+            .bit-widget {
+                background: none !important;
+                color: #ffffff;
+                .bit-event-lists{
+                    .bit-events-container{
+                        .bit-upcoming-events-container{
+                            .bit-past-events{
+                                .bit-event{
+                                    .bit-event-buttons{
+                                        .bit-rsvp-container{
+                                            a{
+                                                color: #ffffff !important;
+                                                border: 1px solid #ffffff !important;
+                                            }
+                                        }
+                                    }
+                                    color: #ffffff;
+                                    a{
+                                        .bit-date{
+                                            color: #ffffff;
+                                        }
+                                        .bit-venue{
+                                            color: #ffffff;
+                                        }
+                                    }
+                                }
+                            }
+                            .bit-upcoming-events{
+                                .bit-event{
+                                    color: #ffffff;
+                                    .bit-details{
+                                        .bit-titleWrapper{
+                                            .bit-venue{
+                                                color: #ffffff;
+                                            }
+                                        }
+                                    }
+                                    .bit-offers-container{
+                                        a{
+                                            background-color: #111 !important;
+                                            border: 1px solid #fff !important;
+                                        }
+                                    }
+                                    .bit-event-buttons{
+                                        .bit-rsvp-container{
+                                                a{
+                                                    color: #fff !important;
+                                                    border: 1px solid #fff !important;
+                                                }
+                                        }
+                                    }
+                                }
+                            }
+                            .bit-upcoming-events-show-all-button{
+                                color: #000 !important;
+                                border: 1px solid #fff !important;
+                                background-color: #ffffff;
+                                
+                            }
+                        }
+                    }
+                }
+                .bit-nav-bar{
+                    .bit-event-list-title{
+                        color: #fff !important;
+                    }
+                }
+                .bit-event-lists{
+                    .bit-events-container{
+                       .bit-upcoming-events-container{
+                           .bit-past-events-show-all-button{
+                               color: #ffffff !important;
+                               border: 1px solid #ffffff !important;
+                           }
+                       } 
+                    }
+                }
+            }
+        }
+    }
+}
+

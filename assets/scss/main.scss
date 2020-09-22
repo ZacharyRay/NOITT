@@ -1,0 +1,17 @@
+// Import settings (fonts, media queries, mixins etc.)
+@import "settings/media-queries";
+@import "settings/misc";
+
+// Import main elements
+@import "main/body.scss";
+@import "main/header.scss";
+@import "main/footer-standard";
+// Import acf-elements
+@import "acf-elements/frontpage";
+@import "acf-elements/about";
+@import "acf-elements/music";
+@import "acf-elements/tour";
+@import "acf-elements/contact";
+
+// Import components
+@import "components/components";

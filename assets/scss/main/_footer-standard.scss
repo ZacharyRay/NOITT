@@ -1,0 +1,88 @@
+// keyframes
+
+#footer-standard-wrapper{
+    #some-footer-standard{
+        #socials-wrapper{
+            position: fixed;
+            z-index: 2;
+            bottom: 4%;
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: flex-start;
+            @include min-screen(800px){
+                justify-content: flex-start;
+            }
+            #socials-box{
+                display: flex;
+                flex-direction: row;
+                margin-left: 6vw;
+                @include min-screen(800px){
+                    margin-left: 15vw;
+                }
+                #so-me{
+                    a{
+                        #so-me-icon{
+                            width: 55px;
+                            height: 55px;
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                        }
+                    }
+                }
+                #so-me:nth-child(1){
+                    animation: bouncing-one 2s infinite;
+                }
+                #so-me:nth-child(2){
+                    animation: bouncing-one 2s infinite;
+                    animation-delay: 0.4s;
+                }
+    
+                #so-me:nth-child(3){
+                    animation: bouncing-one 2s infinite;
+                    animation-delay: 0.9s;
+                }
+                #so-me:nth-child(4){
+                    animation: bouncing-one 2s infinite;
+                    animation-delay: 1.3s;
+                }
+                #so-me:nth-child(5){
+                    animation: bouncing-one 2s infinite;
+                    animation-delay: 1.8s;
+                }
+                #so-me:nth-child(6){
+                    animation: bouncing-one 2s infinite;
+                    animation-delay: 1.9s;
+                }
+            }
+        }
+        
+    }
+    #copyright-footer-standard{
+        height: 150px;
+        width: 100vw;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        color: #ffffff;
+        p{
+            transform: translatex(-15vw);
+            font-size: 1rem;
+            font-family: sans-serif;
+            font-weight: 100;
+        }
+    }
+}
+
+
+
+@keyframes bouncing-footer-standard{
+    0%   { transform: scale(1,1)      translateY(0); }
+   10%  { transform: scale(1.1,.9)   translateY(0); }
+   30%  { transform: scale(.9,1.1)   translateY(-20px); }
+   50%  { transform: scale(1.05,.95) translateY(0); }
+   57%  { transform: scale(1,1)      translateY(-3px); }
+   64%  { transform: scale(1,1)      translateY(0); }
+   100% { transform: scale(1,1)      translateY(0); }
+  }
