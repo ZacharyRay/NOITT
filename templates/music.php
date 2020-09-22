@@ -10,6 +10,11 @@ $media_one = get_sub_field('media_box_one');
 $media_two = get_sub_field('media_box_two');
 $media_three = get_sub_field('media_box_three');
 $media_four = get_sub_field('media_box_four');
+
+$media_five = get_sub_field('media_box_five');
+$media_six = get_sub_field('media_box_six');
+$media_seven = get_sub_field('media_box_seven');
+$media_eight = get_sub_field('media_box_eight');
 $stream = get_sub_field('stream_links');
 ?>
 <div id="hero-music-wrapper">
@@ -62,6 +67,31 @@ $stream = get_sub_field('stream_links');
     </div>
 </div>
 
+<div id="media-wrapper-d">
+    <div id="media-wrap">
+        <a href="#modal-image-five" rel="modal:open" id="modal-link-five">
+            <div class="media" style="background-image: url('<?= $media_five['image_five']; ?>')">
+            <?= $media_one['video_five']; ?>
+            </div>
+        </a>
+        <a href="#modal-image-six" rel="modal:open" id="modal-link-six">
+            <div class="media" style="background-image: url('<?= $media_six['image_six']; ?>')">
+            <?= $media_two['video_sex']; ?>
+            </div>
+        </a>
+        <a href="#modal-image-seven" rel="modal:open" id="modal-link-seven">
+            <div class="media" style="background-image: url('<?= $media_seven['image_seven']; ?>')">
+            <?= $media_three['video_seven']; ?>
+            </div>
+        </a>
+        <a href="#modal-image-eight" rel="modal:open" id="modal-link-eight">
+            <div class="media" style="background-image: url('<?= $media_eight['image_eight']; ?>')">
+            <?= $media_four['video_eight']; ?>
+            </div>
+        </a>
+    </div>
+</div>
+
 <!-- Modals -->
 
 <div id="modal-wrapper">
@@ -69,6 +99,10 @@ $stream = get_sub_field('stream_links');
     <div id="modal-image-two" class="modal" style="background-image: url('<?= $media_two['image_two']; ?>')"></div>
     <div id="modal-image-three" style="background-image: url('<?= $media_three['image_three']; ?>')"></div>
     <div id="modal-image-four" style="background-image: url('<?= $media_four['image_four']; ?>')"></div>
+    <div id="modal-image-five" class="modal" style="background-image: url('<?= $media_five['image_five']; ?>')"></div>
+    <div id="modal-image-six" class="modal" style="background-image: url('<?= $media_six['image_six']; ?>')"></div>
+    <div id="modal-image-seven" style="background-image: url('<?= $media_seven['image_seven']; ?>')"></div>
+    <div id="modal-image-eight" style="background-image: url('<?= $media_eight['image_eight']; ?>')"></div>
 </div>
 
 <!-- Stream -->
